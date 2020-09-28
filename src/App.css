@@ -2,5 +2,9 @@
   width: 100vw;
   height: 200vh;
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Hyades.jpg/1200px-Hyades.jpg);
-  background-color: pink;
+  background-color: white;
+}
+
+img{
+  height:40vh;
 }

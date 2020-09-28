@@ -3,7 +3,7 @@ const app = express();
 const ctrl = require('./controller');
 app.use(express.json());
 
-
+app.get('/api/characters', ctrl.getAllCharacters);
 app.get('/api/character/:id', ctrl.getCharacter);
 app.post('/api/character', ctrl.newCharacter);
 app.put('/api/character/:id', ctrl.updateAttributes);
