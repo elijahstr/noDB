@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Character from './Character'
 import SelectButton from './SelectButton'
+import WinLose from './WinLose'
+import "../CSS/body.css"
 
 export default class Body extends Component {
     constructor() {
@@ -39,11 +41,23 @@ export default class Body extends Component {
         return (
             
             <div>
-               <section>
-                    {mappedButtons1}
-                    <Character theChar={this.props.char1} updateFN={this.props.updateFN} destroyFN={this.props.destroyFN}/> 
-                    {mappedButtons2}
-                    <Character theChar={this.props.char2} updateFN={this.props.updateFN} destroyFN={this.props.destroyFN}/>
+               <section className="main-body">
+                   <section className="one-character">
+                        <section className="selector-buttons">
+                         {mappedButtons1}
+                        </section>
+                        <Character theChar={this.props.char1} updateFN={this.props.updateFN} destroyFN={this.props.destroyFN}/>
+                        {/* <WinLose char1={this.props.char1} char2={this.props.char2}/> */}
+
+                    </section>    
+                     
+                    <section className="one-character">
+                        <section className="selector-buttons">
+                        {mappedButtons2}
+                        </section>
+                        <Character theChar={this.props.char2} updateFN={this.props.updateFN} destroyFN={this.props.destroyFN}/>
+                        {/* <WinLose char1={this.props.char2} char2={this.props.char1}/> */}
+                    </section>    
                 </section>
             </div>
         )

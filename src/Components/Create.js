@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "../CSS/create.css"
 
 export default class Create extends Component {
     constructor(){
@@ -49,15 +50,18 @@ export default class Create extends Component {
     
     render() {
         return (
-            <div>
+            <div className="create">
                 <h2>CREATE YOUR CHARACTER</h2>
-                <input onChange={this.changeName} placeholder="Name"></input>
-                <input onChange={this.changeUrl} placeholder="Image URL"></input>
-                <input onChange={this.changeAttack} placeholder="Attack"></input>
-                <input onChange={this.changeDefense} placeholder="Defense"></input>
-                <input onChange={this.changeSpecial} placeholder="Special"></input>
-                <input onChange={this.changeForce} placeholder="Force"></input>
-                <button onClick={()=>this.props.createFN(this.state.name, this.state.url, this.state.attack, this.state.defense, this.state.special, this.state.force)}>Submit</button>
+                <br></br>
+                <section className="input-fields">
+                    <input onChange={this.changeName} placeholder="Name"></input>
+                    <input onChange={this.changeUrl} placeholder="Image URL"></input>
+                    <input onChange={this.changeAttack} placeholder="Attack"></input>
+                    <input onChange={this.changeDefense} placeholder="Defense"></input>
+                    <input onChange={this.changeSpecial} placeholder="Special"></input>
+                    <input onChange={this.changeForce} placeholder="Force"></input>
+                    <button onClick={()=>this.props.createFN(this.state.name, this.state.url, this.state.attack, this.state.defense, this.state.special, this.state.force)}>Submit</button>
+                </section>
             </div>
         )
     }

@@ -18,6 +18,7 @@ export default class Character extends Component {
                 <section>
                 <Image imgSrc={this.props.theChar.image} alt={this.props.theChar.name}/>
                 <Attribute updateFN={this.props.updateFN} destroyFN={this.props.destroyFN} id={this.props.theChar.id} attack={this.props.theChar.attack} defense={this.props.theChar.defense} special={this.props.theChar.special} force={this.props.theChar.force}/>
+                
                 </section>
             </div>
         )

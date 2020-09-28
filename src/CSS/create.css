@@ -1,0 +1,17 @@
+.create{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+h2{
+    color: yellow;
+    justify-content: center;
+    align-content: center;
+}
+
+.input-fields{
+    
+}

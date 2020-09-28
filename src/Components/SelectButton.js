@@ -1,7 +1,7 @@
 import React from 'react'
 function SelectButton(props){
     return (
-        <div>
+        <div className="one-button">
              <button onClick={()=>props.getChar(props.character.id)}>{props.character.name}</button>
         </div>
     )
